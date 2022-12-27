@@ -1,0 +1,33 @@
+.button {
+  font-family: inherit;
+  background-color: none;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 13px;
+  line-height: 20px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  transition: 0.3s;
+  border-radius: 90px;
+  user-select: none;
+
+  &__default {
+    background-color: #4056a1;
+
+    &:hover {
+      background-color: #596fb9;
+    }
+  }
+
+  &__completed {
+    background-color: #00b177;
+    padding: 10px 55px;
+
+    &:hover {
+      background-color: #2ed19b;
+    }
+  }
+}

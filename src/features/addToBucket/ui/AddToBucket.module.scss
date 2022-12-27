@@ -1,0 +1,64 @@
+.add-to-bucket {
+  &__group {
+    display: flex;
+    position: relative;
+  }
+
+  &__main-btn {
+    z-index: 2;
+  }
+
+  &__counter {
+    margin-left: -43px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px 0 0;
+    width: 120px;
+    border-radius: 50px;
+    background-color: #f5f5f7;
+    justify-content: flex-end;
+    z-index: 1;
+    gap: 11px;
+    position: absolute;
+    top: 0;
+    right: -80px;
+    height: 100%;
+    transition: 0.3s;
+    transform: translateX(0px);
+
+    &_hidden {
+      padding: 0;
+      right: 0;
+      transform: translateX(-80px) scaleX(0.5);
+    }
+  }
+
+  &__counter-vue {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: #2e2e33;
+  }
+
+  @mixin countController {
+    width: 10px;
+    height: 10px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__minus {
+    @include countController;
+    background-image: url('../../../shared/assets/icons/minus.svg');
+  }
+  &__plus {
+    @include countController;
+    background-image: url('../../../shared/assets/icons/plus.svg');
+  }
+}

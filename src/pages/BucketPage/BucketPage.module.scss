@@ -1,0 +1,10 @@
+.bucket-page {
+  &__main {
+    max-width: 1780px;
+    width: 100%;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    justify-items: center;
+  }
+}

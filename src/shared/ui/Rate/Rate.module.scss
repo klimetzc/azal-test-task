@@ -1,0 +1,17 @@
+.rate {
+  width: 86px;
+  height: 13.3px;
+  background-color: #e9e9eb;
+
+  &__cover {
+    background-color: #f26a61;
+    height: 92%;
+
+    &-stars {
+      background-image: url('../../assets/images/stars_background.png');
+      background-size: cover;
+      width: 86px;
+      height: 13.3px;
+    }
+  }
+}

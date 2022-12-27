@@ -1,0 +1,22 @@
+.like {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url('../../../shared/assets/icons/like.svg');
+  background-size: 16px 14px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: 1px solid #f5f5f7;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &:hover {
+    background-size: 20px 17px;
+  }
+
+  &_liked {
+    border-color: #ff0000;
+    background-image: url('../../../shared/assets/icons/like_active.svg');
+  }
+}
