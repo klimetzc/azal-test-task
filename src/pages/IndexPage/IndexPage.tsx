@@ -15,14 +15,15 @@ const IndexPage: React.FC<IIndexPage> = ({ data }) => {
     <main className={styles['index-page']}>
       <section className={styles['index-page__content']}>
         <Promo />
-        {data.map((item) => (
-          <Product
-            data={item}
-            key={item.id}
-            beforeAction={<AddToBucket product={item} />}
-            afterAction={<LikeProduct product={item} />}
-          />
-        ))}
+        {data &&
+          data.map((item) => (
+            <Product
+              data={item}
+              key={item.id}
+              beforeAction={<AddToBucket product={item} />}
+              afterAction={<LikeProduct product={item} />}
+            />
+          ))}
       </section>
     </main>
   );
